@@ -237,16 +237,14 @@ FEATURES
 }
 
 .steps__img--laptop {
-  width:100%;
+  width: 100%;
 }
 
-.steps__startup{
-  display: flex;
-  flex-direction: column;
+.steps__startup {
   width: 50%;
 }
 
-.steps__startup--getstarted {
+.steps__twocol {
   display: flex;
-  flex-direction: column;
+
 }
