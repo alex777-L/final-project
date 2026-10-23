@@ -49,11 +49,13 @@ h3 {
   margin: 0;
   font-weight: 600;
   line-height: 1;
+  color: #243e63;
 }
 
 h4 {
   font-size: 48px;
   margin: 16px 0 0;
+  padding: 8px;
 }
 
 h5 {
@@ -62,6 +64,7 @@ h5 {
   color: #6415ff;
   letter-spacing: 1px;
   margin:  0;
+  padding: 8px;
 }
 
 p {
@@ -248,7 +251,14 @@ FEATURES
   display: flex;
   width: 100%;
   max-width: 1200px;
-  padding: 60px 0;
+  padding: 96px 0;
+}
+
+
+.steps__twocol--container{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
 }
 
 .steps__img {
@@ -259,6 +269,7 @@ FEATURES
 
 .steps__img--laptop {
   width: 100%;
+
 }
 
 .steps__startup {
@@ -276,12 +287,14 @@ FEATURES
   margin: 0 10px;
   font-size: 32px;
   font-weight: bold;
-  color: gray;
+  color: #cbd5e0;
 }
 
 .steps__twocol--text {
   display: flex;
   flex-direction: column;
-  align-items: start;
-  
+  align-items: start; 
+  padding: 16px;
+  margin: 0 0 32px;
+  color: #718096;
 }
