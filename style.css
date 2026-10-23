@@ -118,6 +118,12 @@ input::placeholder {
 
 }
 
+/* 
+
+NAV
+
+*/
+
 .nav__link {
   padding: 0 0 4px;
   margin: 0 24px;
@@ -140,6 +146,11 @@ input::placeholder {
   margin: 0 24px 0 48px;
 }
 
+/* 
+
+HIGHLIGHTS
+
+*/
 .highlights {
   display: flex;
   align-items: center;
@@ -201,7 +212,11 @@ FEATURES
   font-size: 18px;
   padding: 12px;
 }
+/* 
 
+SERVICES
+
+*/
 .services {
   display: flex;
   flex-wrap: wrap;
@@ -226,6 +241,12 @@ FEATURES
   padding: 8px;
 }
 
+/* 
+
+EXAMPLES
+
+*/
+
 .example  {
   display: flex;
   width: 100%;
@@ -246,6 +267,12 @@ FEATURES
   width:100%;
   
 }
+
+/* 
+
+STEPS
+
+*/
 
 .steps{
   display: flex;
@@ -298,3 +325,9 @@ FEATURES
   margin: 0 0 32px;
   color: #718096;
 }
+
+/* 
+
+VALUES
+
+*/
