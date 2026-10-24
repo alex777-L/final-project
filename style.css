@@ -331,3 +331,34 @@ STEPS
 VALUES
 
 */
+
+.values {
+  display: flex;
+}
+
+.values__twocol {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.values__features {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+.values__features--explaination {
+  display: flex;
+ 
+}
+
+.values__img {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.values__img--proto {
+  width: 100%;
+}
