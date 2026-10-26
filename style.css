@@ -342,14 +342,30 @@ VALUES
   width: 50%;
 }
 
-.values__features {
+.values__features--dollarsign {
   display: flex;
-  flex-direction: row;
-  width: 50%;
+  padding: 8px;
+}
+
+#dollarsign {
+  display: flex;
+  padding: 8px;
+  
+}
+
+
+.values__features--twocolumns {
+  display: flex;
+}
+
+.values__features--suitcase {
+  display: flex;
+  padding: 8px;
 }
 
 .values__features--explaination {
   display: flex;
+  flex-direction: column;
  
 }
 
@@ -361,4 +377,13 @@ VALUES
 
 .values__img--proto {
   width: 100%;
+}
+.values__features--colone {
+  display: flex;
+  flex-direction: column;
+}
+
+.values__features--coltwo {
+  display: flex;
+  flex-direction: column;
 }
