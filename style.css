@@ -349,10 +349,35 @@ VALUES
 
 #dollarsign {
   display: flex;
+  font-size: 20px;
+  font-weight: 200;
   padding: 8px;
-  
+  background-color: #9ae6b4;
+  border: 1px transparent;
+  border-radius: 30px;
 }
 
+.values__features--heading {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+
+#suitcase {
+  display: flex;
+  font-size: 20px;
+  font-weight: 200;
+  padding: 8px;
+  background-color: #9ae6b4;
+  border: 1px transparent;
+  border-radius: 30px;
+}
+
+.values__features--professional {
+  display: flex;
+  align-items: center;
+}
 
 .values__features--twocolumns {
   display: flex;
