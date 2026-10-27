@@ -425,10 +425,103 @@ VALUES
   letter-spacing: 1px;
 }
 .values__button {
-  margin: 32px 24px;
+  margin: 32px 24px 0 0;
 }
 
 #values__button {
-  padding: 12px ;
+  padding: 8px ;
   margin: 8px;
+}
+
+/* 
+
+Pricing
+
+*/
+
+.pricing {
+  padding: 96px;
+}
+
+.pricing__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 40px 0 0 ;
+}
+
+.threeplans__description {
+  text-align: center;
+  margin: 16px 0 0;
+  width: 100%;
+  font-size: 1.125rem;
+}
+
+.threeplans__container {
+  display: flex;
+  flex-direction: row;
+  align-items: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.threeplans__planone {
+  background-color: #ffffff;
+  margin: 64px 32px 0 0;
+  padding: 8px 32px 0;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  position: relative;
+  margin-top: 4rem;
+  width: 100%;
+  max-width: 24rem;
+  border-radius: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  text-align: center;
+  box-shadow: ;
+}
+
+.threeplanes__header--personal {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 0;
+}
+
+.name {
+  font-size: 20px;
+  color: #1a202c;
+}
+
+.price {
+  color: #1a202c;
+  font-size: 48px 0;
+  margin: 4px 0;
+}
+
+.duration {
+  color: #a0aec0;
+  font-size: 16px;
+}
+
+.mainfeature {
+  color: #1a202c;
+  font-size: 20px;
+}
+
+.feature {
+  color: #718096;
+  font-size: 16px;
+  margin: 20px 0 0;
+}
+
+.threeplans__features {
+  display: flex;
+  flex-direction: column;
+  margin: 0 -32px;
+  padding: 32px;
+  
 }
