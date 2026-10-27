@@ -354,7 +354,8 @@ VALUES
   padding: 8px;
   background-color: #9ae6b4;
   border: 1px transparent;
-  border-radius: 30px;
+  border-radius: 50%;
+  color: gray;
 }
 
 .values__features--heading {
@@ -369,14 +370,17 @@ VALUES
   font-size: 20px;
   font-weight: 200;
   padding: 8px;
-  background-color: #9ae6b4;
+  background-color: #feb2b2;
   border: 1px transparent;
-  border-radius: 30px;
+  border-radius: 50%;
+  color: gray;
 }
 
 .values__features--professional {
   display: flex;
   align-items: center;
+  font-weight: bold;
+  padding: 8px;
 }
 
 .values__features--twocolumns {
@@ -406,9 +410,25 @@ VALUES
 .values__features--colone {
   display: flex;
   flex-direction: column;
+  margin: 18px 32px 0 0;
+  color: #718096;
+  padding: 8px;
+  letter-spacing: 1px;
 }
 
 .values__features--coltwo {
   display: flex;
   flex-direction: column;
+  margin: 18px 0 0;
+  color: #718096;
+  padding: 8px;
+  letter-spacing: 1px;
+}
+.values__button {
+  margin: 32px 24px;
+}
+
+#values__button {
+  padding: 12px ;
+  margin: 8px;
 }
