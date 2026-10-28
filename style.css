@@ -3,6 +3,7 @@
 * {
   font-family: "Inter", sans-serif;
 }
+
 .row {
  width: 100%;
  max-width: 1200px;
@@ -477,20 +478,20 @@ Pricing
   justify-content: space-between;
 }
 
-.threeplans__planone {
+.threeplans__planone--personal {
     position: relative;
     margin-top: 4rem;
     display: flex;
     margin: 64px 32px 0 0;
     width: 100%;
-    max-width: 24rem;
+    max-width: 384px;
     flex-direction: column;
     border-radius: 0.5rem;
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 0.5rem;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 8px;
     text-align: center;
     --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -500,6 +501,7 @@ Pricing
   display: flex;
   flex-direction: column;
   padding: 32px 0;
+  line-height: 1.625;
 }
 
 .name {
@@ -526,8 +528,9 @@ Pricing
 }
 
 .mainfeature {
-  color: #1a202c;
   font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 .feature {
@@ -536,7 +539,7 @@ Pricing
   margin: 20px 0 0;
 }
 
-.threeplans__features {
+.threeplans__features--personal {
   display: flex;
   flex-direction: column;
   margin: 0 -32px;
@@ -558,4 +561,149 @@ Pricing
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
    background: linear-gradient(115deg, rgb(56, 178, 172)0%, rgb(129, 230, 217)100%);
+}
+
+.threeplans__planaction--personal {
+  padding: 32px 16px;
+}
+
+.buy__button--personal {
+  background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  border-radius: 9999px;
+}
+
+.threeplans__planone--business {
+    position: relative;
+    margin-top: 64px;
+    display: flex;
+    margin: 64px 32px 0 0;
+    width: 100%;
+    max-width: 384px;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 8px;
+    background-image: linear-gradient(135deg,rgb(76, 81, 191)0%,rgb(102, 126, 234)100%);
+    background-position: 0%;
+    background-size: auto;
+    background-repeat: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    /* --tw-bg-opacity: 1; */
+    background-color: rgb(100, 21, 255);
+    text-align: center;
+    --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.threeplanes__header--business {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 0;
+  text-transform: uppercase;
+  line-height: 1.625;
+}
+
+.threeplans__features--business {
+  display: flex;
+  flex-direction: column;
+  margin: 0 -32px;
+  padding: 32px;
+  box-sizing: border-box;
+  border-width: 0px;
+  border-style: solid;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  border-color: rgb(102, 126,234);
+}
+
+.threeplans__planaction--business {
+  padding: 32px 16px;
+}
+
+.buy__button--business {
+  background-color: rgb(247, 250, 252);
+  color: rgb(100, 21, 255);
+  font-size: 14px;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  border-radius: 9999px;
+}
+
+.threeplans__planone--enterprise {
+    position: relative;
+    margin-top: 4rem;
+    display: flex;
+    margin: 64px 32px 0 0;
+    width: 100%;
+    max-width: 24rem;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    text-align: center;
+    --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.threeplans__styleddiv--enterprise {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  height: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+   background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+
+.threeplanes__header--enterprise {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 0;
+  line-height: 1.625;
+}
+
+.threeplans__features--enterprise {
+  display: flex;
+  flex-direction: column;
+  margin: 0 -32px;
+  padding: 32px;
+  box-sizing: border-box;
+  border-width: 0px;
+  border-style: solid;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  border-color: rgb(226, 232, 240);
+}
+
+.threeplans__planaction--enterprise {
+  padding: 32px 16px;
+}
+
+.buy__button--enterprise {
+  background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+  width: 100%;
+  padding: 16px 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  border-radius: 9999px;
 }
