@@ -56,19 +56,27 @@ h4 {
   font-size: 48px;
   margin: 16px 0 0;
   padding: 8px;
+  font-weight: 900;
+  color: #243e63;
+  letter-spacing: 0.025em;
+  line-height: 1.25;
 }
 
 h5 {
   font-size: 16px;
   font-style: bold;
-  color: #6415ff;
+  color: rgb(100 21 255 );
   letter-spacing: 1px;
   margin:  0;
   padding: 8px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 p {
-  font-size:16px;
+  font-size:18px;
+  color: #7c8ba1;
+  line-height: 1.625;
 }
 
 .get__started {
@@ -334,6 +342,7 @@ VALUES
 
 .values {
   display: flex;
+  padding: 96px 0;
 }
 
 .values__twocol {
@@ -399,7 +408,7 @@ VALUES
 }
 
 .values__img {
-  width: 50%;
+  width: 48%;
   display: flex;
   align-items: center;
 }
@@ -414,6 +423,7 @@ VALUES
   color: #718096;
   padding: 8px;
   letter-spacing: 1px;
+  line-height: 1.625;
 }
 
 .values__features--coltwo {
@@ -423,6 +433,7 @@ VALUES
   color: #718096;
   padding: 8px;
   letter-spacing: 1px;
+  line-height: 1.625;
 }
 .values__button {
   margin: 32px 24px 0 0;
@@ -467,22 +478,22 @@ Pricing
 }
 
 .threeplans__planone {
-  background-color: #ffffff;
-  margin: 64px 32px 0 0;
-  padding: 8px 32px 0;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid gray;
-  position: relative;
-  margin-top: 4rem;
-  width: 100%;
-  max-width: 24rem;
-  border-radius: 0.5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 0.5rem;
-  text-align: center;
-  box-shadow: ;
+    position: relative;
+    margin-top: 4rem;
+    display: flex;
+    margin: 64px 32px 0 0;
+    width: 100%;
+    max-width: 24rem;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    text-align: center;
+    --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .threeplanes__header--personal {
@@ -494,17 +505,24 @@ Pricing
 .name {
   font-size: 20px;
   color: #1a202c;
+  font-weight: 700;
 }
 
 .price {
+  margin-top: 4px;
+  margin-bottom: 4px;
   color: #1a202c;
-  font-size: 48px 0;
+  font-size: 48px;
+  font-weight: 700;
   margin: 4px 0;
+  padding: 8px;
 }
 
 .duration {
   color: #a0aec0;
   font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
 }
 
 .mainfeature {
@@ -523,5 +541,21 @@ Pricing
   flex-direction: column;
   margin: 0 -32px;
   padding: 32px;
-  
+  box-sizing: border-box;
+  border-width: 0px;
+  border-style: solid;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  border-color: rgb(226, 232, 240);
+}
+
+.threeplans__styleddiv--personal {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  height: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+   background: linear-gradient(115deg, rgb(56, 178, 172)0%, rgb(129, 230, 217)100%);
 }
