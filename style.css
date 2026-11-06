@@ -858,5 +858,77 @@ Testimonials
   background-color: rgb(237, 242, 247);
   padding: 16px;
   border: none;
+}
 
+/* 
+
+FAQS
+
+*/
+
+.faqs__heading {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.faqs__heading--header {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.6px; 
+}
+
+.faqs__heading--subhead {
+  width: 100%;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+}
+
+.faqs__heading--description {
+  width: 100%;
+  text-align: center;
+}
+
+.faqs__container {
+  position: relative;
+  margin: 0;
+  margin-top: 48px;
+  max-width: 896px;
+}
+
+.faqs__singlecol {
+  margin-top: 20px;
+  padding: 20px 32px;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: rgb(237, 242, 247);
+  color: rgb(45, 55, 72);
+}
+
+.faqs__question--container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faqs__question--text {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.faqs__question--toggle {
+  height: 24px;
+  width: 24px;
+}
+
+.faqs__question--answer {
+  opacity: 0;
+  height: 0;
+  margin-top: 0;
+  pointer-events: none;
+  font-size: 14px;
+  line-height: 1.625;
 }
