@@ -951,12 +951,19 @@ Get Started
 
 .get__started--row {
   padding: 80px 0;
+  background-color: rgb(100, 21, 255);
+  position: relative; 
 }
 
 .get__started--container {
+  display: flex;
+  flex-direction: row;
   position: absolute;
   overflow: hidden;
   border-radius: 8px;
+  background-color: rgb(100, 21, 255);
+  position: relative;
+
 }
 
 .get__started--contents {
@@ -966,8 +973,58 @@ Get Started
   margin-right: auto;
   display: flex;
   max-width: 1024px;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   padding-left: 32px;
   padding-right: 32px;
+}
+
+.get__started--heading {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(247, 250, 252);
+  margin-right: 30px;
+  width: 50%;
+  
+}
+
+.get__started--btn {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  max-width: 480px;
+}
+
+
+.get__started--button {
+  background-color: rgb(245, 101, 101);
+  color: rgb(247, 250, 252 );
+  margin-top: 0;
+  padding: 20px 40px;
+  margin-right: 32px;
+  width: auto;
+  font-size: 16px;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-color: transparent;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+.get__started--contact {
+  background-color: rgb(100, 21, 255);
+  color: rgb(247, 250, 252 );
+  margin-top: 0;
+  padding: 20px 40px;
+  margin-right: 32px;
+  width: auto;
+  font-size: 16px;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(160, 174, 192);
+  font-weight: 700;
+  letter-spacing: 0.4px;
 }
