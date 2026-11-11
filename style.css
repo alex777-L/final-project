@@ -37,6 +37,7 @@ nav {
 a {
   text-decoration: none;
   color: rgb(36 62 99 );
+  cursor:pointer;
 }
 
 h1  {
@@ -75,7 +76,6 @@ h5 {
   color: rgb(100 21 255 );
   letter-spacing: 1px;
   margin:  0;
-  padding: 8px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -102,6 +102,7 @@ input {
   border: none;
   width: 52%;
   height: 40px;
+  margin-right: 32px;
 }
 
 input::placeholder {
@@ -224,7 +225,10 @@ FEATURES
 */
 
 .feature__container {
-  padding: 80px 0;
+  padding: 96px 0;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .feature__description {
@@ -235,9 +239,14 @@ FEATURES
   margin-bottom: 60px;
 }
 .feature__description--ex {
-  width: 50%;
+  width: 100%;
+  max-width: 576px;
+  margin-top: 16px;
+  text-align: center;
   font-size: 18px;
+  font-weight: 500;
   padding: 12px;
+  color: rgb(124,129,161);
 }
 /* 
 
@@ -254,18 +263,52 @@ SERVICES
   width: calc(100%/3);
 }
 
+.service__card {
+  flex-direction: row;
+  align-items: flex-start;
+  text-align: left;
+  margin-left: 16px;
+  margin-right: 16px;
+  display: flex;
+  height: 100%;
+  padding: 32px 8px;
+}
+
+.service__img--container {
+  flex-shrink: 0;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(226, 232, 240);
+  padding: 20px;
+  text-align: center;
+}
+
 .service__icon {
-  border: 1px solid;
-  border-radius: 100px;
-  padding: 12px;
-  height: 10%;
-  
+  height: 24px;
+  width: 24px;
 }
 
 .service__description {
   display: flex;
   flex-direction: column;
   padding: 8px;
+}
+
+.service__heading {
+  color: #243e63;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.6px;
+}
+
+.service__text {
+  font-size: 16px;
+  margin-top: 16px;
+  font-weight: 500;
+  line-height: 2;
+  color: rgb(124, 139, 161);
 }
 
 /* 
@@ -870,6 +913,7 @@ FAQS
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 96px 0;
 }
 
 .faqs__heading {
@@ -950,6 +994,8 @@ Get Started
 */
 
 .get__started--row {
+  margin-top: 96px;
+  margin-bottom: 96px;
   padding: 80px 0;
   background-color: rgb(100, 21, 255);
   position: relative; 
@@ -1027,4 +1073,123 @@ Get Started
   border-color: rgb(160, 174, 192);
   font-weight: 700;
   letter-spacing: 0.4px;
+}
+
+/* 
+
+Footer
+
+*/
+
+.fivecolumn__background {
+  position: relative;
+  margin-left: -32px;
+  margin-right: -32px;
+  margin-bottom: -32px;
+  background-color: rgb(100, 21, 255);
+  padding: 80px 32px;
+  color: rgb(247, 250, 252);
+}
+
+.fivecolumn__contents {
+  position: relative;
+  z-index: 10;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+}
+
+.fivecolumn__columns {
+  margin-top: -48px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.fivecolumn__column {
+  margin-top: 48px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.fivecolumn__heading {
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #f7fafc;
+}
+
+.fivecolumn__links {
+  margin-top: 24px;
+  margin-right: 0;
+  font-size: 14px;
+  font-weight: 500;
+  list-style-type: none;
+}
+
+.fivecolumn__link--item {
+  margin-top: 12px;
+  border-bottom-width: 2px;
+  border-color: transparent;
+  padding-bottom: 4px;
+  color: rgb(247, 250, 252)
+}
+
+.fivecolumn__divider {
+  
+  margin-top: 64px;
+  margin-bottom: 64px;
+  width: 100%;
+  border-bottom-width: 1px;
+  border-top-width: 1px;
+  opacity: 1;
+  border-style: solid;
+  border-color: rgb(116, 44, 255);
+}
+
+.fivecolumn__legal--row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fivecolumn__logo--container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.fivecolumn__logo {
+  width: 32px;
+}
+
+.fivecolumn__legal--logoheading {
+  margin-left: 8px;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: rgb(247, 250, 252);
+}
+
+.fivecolumn__copyright {
+  margin-top: 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(203, 213, 224);
+}
+
+.fivecolumn__social {
+  margin-top: 0;
+  display: flex;
+}
+
+.social__link {
+  margin-right: 16px;
+  cursor: pointer;
+  border-radius: 9999px;
+  background-color: rgb(247, 250, 252);
+  padding: 8px;
+  color: rgb(26, 32, 44);
 }
