@@ -246,6 +246,17 @@ HIGHLIGHTS
   opacity: 0.5;
 }
 
+.highlights__blob {
+ pointer-events: none;
+ position: absolute;
+ left: 0;
+ bottom: 0;
+ z-index: -10;
+ height: 256px;
+ width: 256px;
+ opacity: 0.05;
+}
+
 /* 
 
 FEATURES
