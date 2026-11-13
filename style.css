@@ -90,10 +90,9 @@ p {
   display: flex;
   margin-left: 0;
   margin-right: 0;
-  justify-content: end;
   align-items: center;
   padding: 16px 8px 16px 32px;
-  width: 100%;
+  width: 90%;
   max-width: 448px;
   height: 40px;
 }
@@ -255,6 +254,7 @@ HIGHLIGHTS
  height: 256px;
  width: 256px;
  opacity: 0.05;
+ transform: translateX(-35%) translateY(-180%);
 }
 
 /* 
@@ -1342,4 +1342,16 @@ Footer
   background-color: rgb(247, 250, 252);
   padding: 8px;
   color: rgb(26, 32, 44);
+}
+
+@media (min-width: 1280px) {
+  h1 {
+    font-size: 48px;
+  }
+  p {
+    font-size: 18px;
+  }
+  .design__illustration--img {
+   max-width: 768px; 
+  }
 }
