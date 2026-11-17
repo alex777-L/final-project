@@ -4,7 +4,7 @@
   font-family: "Inter", sans-serif;
 }
 .root {
-  padding: 32px;
+  padding: 0 32px;
 }
 .row {
   width: 100%;
@@ -483,6 +483,7 @@ STEPS
   width: 100%;
   max-width: 1200px;
   padding: 96px 0;
+  align-items: center;
 }
 
 .steps__twocol--container {
@@ -497,10 +498,28 @@ STEPS
 }
 
 .steps__img {
+  position: relative;
   width: 50%;
+  height: 50%;
   border-radius: 4px;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+
+
+.steps__blob {
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+  opacity: .15;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -10;
+  height: 80px;
+  width: 80px;
+  color: rgb(100, 21, 255);
 }
 
 .steps__img--laptop {
@@ -564,6 +583,23 @@ VALUES
   padding: 96px 0;
 }
 
+.values__heading--two {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.values__text {
+  margin-top: 32px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.625;
+  color: rgb(124, 139, 161);
+}
+
 .values__twocol {
   display: flex;
   flex-direction: column;
@@ -613,6 +649,8 @@ VALUES
 
 .values__features--twocolumns {
   display: flex;
+  max-width: 320px;
+  flex-direction: column;
 }
 
 .values__features--suitcase {
@@ -682,18 +720,35 @@ Pricing
   margin: 40px 0 0;
 }
 
+.price__heading {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  color: rgb(100, 21, 255);
+}
+
+.price__heading--two {
+  width: 100%;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+}
+
 .threeplans__description {
   text-align: center;
-  margin: 16px 0 0;
-  width: 50%;
-  font-size: 1.125rem;
+  margin-top: 16px;
+  width: 576px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.625;
+  color: rgb(124, 139, 161);
 }
 
 .threeplans__container {
   display: flex;
-  flex-direction: row;
-
-  align-items: stretch;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -701,9 +756,8 @@ Pricing
   position: relative;
   margin-top: 4rem;
   display: flex;
-  margin: 64px 32px 0 0;
   width: 100%;
-  max-width: 384px;
+  max-width: 320px;
   flex-direction: column;
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
@@ -729,6 +783,7 @@ Pricing
   font-size: 20px;
   color: #1a202c;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .price {
@@ -790,7 +845,7 @@ Pricing
 }
 
 .threeplans__planaction--personal {
-  padding: 32px 16px;
+  padding: 32px;
 }
 
 .buy__button--personal {
@@ -800,12 +855,24 @@ Pricing
     rgb(129, 230, 217) 100%
   );
   width: 100%;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding:16px 36px;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.7px;
   border-radius: 9999px;
+  cursor: pointer;
+  color: rgb(247, 250, 252);
+  transition: ease 300ms;
+}
+
+.buy__button--personal:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  transform: translateX(1px) translateY(-1px);
+}
+
+.buy__button--personal:focus {
+  box-shadow: 0 0 0 3px rgba(66, 153, 225,0.5);
+  transform: translateX(1px) translateY(-1px);
 }
 
 .business {
@@ -816,9 +883,8 @@ Pricing
   position: relative;
   margin-top: 64px;
   display: flex;
-  margin: 64px 32px 0 0;
   width: 100%;
-  max-width: 384px;
+  max-width: 320px;
   flex-direction: column;
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
@@ -869,29 +935,39 @@ Pricing
 }
 
 .threeplans__planaction--business {
-  padding: 32px 16px;
+  padding: 32px ;
 }
 
 .buy__button--business {
   background-color: rgb(247, 250, 252);
   color: rgb(100, 21, 255);
+  border-color: transparent;
   font-size: 14px;
   width: 100%;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  font-weight: 700;
+  padding: 16px 32px;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.7px;
   border-radius: 9999px;
 }
 
+.buy__button--business:hover {
+   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  transform: translateX(1px) translateY(-1px);
+}
+
+.buy__button--business:focus {
+  box-shadow: 0 0 0 3px rgba(66, 153, 225,0.5);
+  transform: translateX(1px) translateY(-1px);
+}
+
 .threeplans__planone--enterprise {
   position: relative;
   margin-top: 4rem;
   display: flex;
-  margin: 64px 32px 0 0;
   width: 100%;
-  max-width: 24rem;
+  max-width: 320px;
   flex-direction: column;
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
@@ -942,7 +1018,7 @@ Pricing
 }
 
 .threeplans__planaction--enterprise {
-  padding: 32px 16px;
+  padding: 32px;
 }
 
 .buy__button--enterprise {
@@ -952,11 +1028,24 @@ Pricing
     rgb(254, 178, 178) 100%
   );
   width: 100%;
-  padding: 16px 0;
+  padding: 16px 32px;
   font-size: 14px;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.7px;
   border-radius: 9999px;
+  border-color: transparent;
+  color: rgb(247, 250, 252);
+}
+
+.buy__button--enterprise:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  transform: translateX(1px) translateY(-1px);
+}
+
+.buy__button--enterprise:focus {
+   box-shadow: 0 0 0 3px rgba(66, 153, 225,0.5);
+  transform: translateX(1px) translateY(-1px);
 }
 
 /* 
@@ -1396,6 +1485,16 @@ Footer
     align-items: flex-start;
     text-align-last: left;
   }
+  .steps__heading--two {
+    font-size: 36px;
+  }
+
+  .values__heading--two {
+    font-size: 36px;
+  }
+  .price__heading--two {
+    font-size: 48px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1432,6 +1531,26 @@ Footer
     flex-direction: row;
     padding: 96px 0;
   }
+
+  .steps__img {
+    width: 50%;
+  }
+
+  .steps__heading--two {
+    text-align: left;
+  }
+
+  .values__heading--two {
+    text-align: left;
+  }
+
+  .values__text {
+    text-align: left;
+    font-size: 16px;
+  }
+  .threeplans__description {
+    font-size: 16px;
+  }
 }
 
 
@@ -1449,6 +1568,16 @@ Footer
   }
   .service {
     width:33.3333%
+  }
+  .steps__heading--two {
+  font-size: 48px;
+}
+  .values__features--twocolumns {
+    flex-direction: row;
+    max-width: none;
+  }
+  .threeplans__container {
+    flex-direction: row;
   }
 }
 
