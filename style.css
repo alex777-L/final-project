@@ -711,7 +711,6 @@ Pricing
 */
 
 .pricing {
-  padding: 32px;
   padding-top: 96px;
   padding-bottom: 96px;
 }
@@ -763,7 +762,7 @@ Pricing
   z-index: -20;
   height: 256px;
   width: 256px;
-  transform: translateX(-50%) translateY(50%);
+  transform: translateX(-60%) translateY(50%);
   opacity: 0.25;
 }
 
@@ -772,7 +771,7 @@ Pricing
   margin-top: 4rem;
   display: flex;
   width: 100%;
-  max-width: 320px;
+  max-width: 384px;
   flex-direction: column;
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
@@ -899,7 +898,7 @@ Pricing
   margin-top: 64px;
   display: flex;
   width: 100%;
-  max-width: 320px;
+  max-width: 384px;
   flex-direction: column;
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
@@ -982,7 +981,7 @@ Pricing
   margin-top: 4rem;
   display: flex;
   width: 100%;
-  max-width: 320px;
+  max-width: 384px;
   flex-direction: column;
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
@@ -1202,10 +1201,37 @@ FAQS
 */
 
 .faqs__container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 96px 0;
+}
+
+.faq__blob {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -20;
+  height: 224px;
+  width: 224px;
+  transform: translateX(50%)translateY(-128px);
+  color: rgb(79, 209, 197);
+  opacity: 0.15;
+}
+
+.faq__blob--list {
+  position: absolute;
+  pointer-events: none;
+  left: 0;
+  bottom: 0;
+  z-index: -20;
+  height: 256px;
+  width: 256px;
+  transform: translateX(-60%);
+  color: rgb(100, 21, 255);
+  opacity: 0.15;
 }
 
 .faqs__heading {
@@ -1254,6 +1280,7 @@ FAQS
 }
 
 .faqs__question--container {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1287,10 +1314,33 @@ Get Started
 .get__started--row {
   margin-top: 96px;
   margin-bottom: 96px;
+  overflow: hidden;
   padding: 80px 0;
   background-color: rgb(100, 21, 255);
   position: relative;
   border-radius: 8px;
+}
+
+.getstarted__blob {
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ height: 320px;
+ width: 320px;
+ transform: translateX(-80px) translateY(128px);
+ color: rgb(80, 17, 204);
+ opacity: 0.5;
+}
+
+.getstarted__blob--two {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 320px;
+  width: 320px;
+  transform: translateX(80px) translateY(-256px);
+  color: rgb(80, 17, 204);
+  opacity: 0.5;
 }
 
 .get__started--container {
@@ -1310,7 +1360,7 @@ Get Started
   margin-right: auto;
   display: flex;
   max-width: 1024px;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   padding-left: 32px;
   padding-right: 32px;
@@ -1318,11 +1368,10 @@ Get Started
 
 .get__started--heading {
   margin: 0;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 700;
   color: rgb(247, 250, 252);
-  margin-right: 30px;
-  width: 50%;
+  margin: 0;
 }
 
 .get__started--btn {
@@ -1351,17 +1400,18 @@ Get Started
 .get__started--contact {
   background-color: rgb(100, 21, 255);
   color: rgb(247, 250, 252);
-  margin-top: 0;
-  padding: 20px 40px;
+  margin-top: 16px;
+  padding: 12px 24px;
   margin-right: 32px;
   width: auto;
-  font-size: 16px;
+  font-size: 14px;
   border-radius: 9999px;
   border-width: 1px;
   border-style: solid;
   border-color: rgb(160, 174, 192);
   font-weight: 700;
   letter-spacing: 0.4px;
+  transition: ease 300ms;
 }
 
 /* 
@@ -1372,12 +1422,34 @@ Footer
 
 .fivecolumn__background {
   position: relative;
+  overflow: hidden;
   margin-left: -32px;
   margin-right: -32px;
   margin-bottom: -32px;
   background-color: rgb(100, 21, 255);
   padding: 80px 32px;
   color: rgb(247, 250, 252);
+}
+
+.fivecolumn__blob {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 320px;
+  width: 320px;
+  transform: translateX(-80px) translateY(-128px);
+  color: rgb(80, 17, 204);
+  opacity: 0.5;
+}
+.fivecolumn__blob--two {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 320px;
+  width: 320px;
+  transform: translateX(40%) translateY(65%);
+  color: rgb(80, 17, 204);
+  opacity: 0.5;
 }
 
 .fivecolumn__contents {
@@ -1513,6 +1585,23 @@ Footer
   .price__heading--two {
     font-size: 48px;
   }
+  .get__started--heading {
+    font-size: 30px;
+  }
+  .get__started--contact {
+    margin-top: 0;
+    margin-right: 0;
+    width: auto;
+    padding: 16px 32px;
+    font-size: 16px;
+  }
+  .get__started--button {
+    margin-top: 0;
+    margin-right: 32px;
+    width: auto;
+    padding: 16px 32px;
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1613,7 +1702,19 @@ Footer
   }
   .testimonials__description {
     padding-left: 64px;
-     }
+  }
+  .threeplans__planone--personal {
+    margin-right: 32px;
+  }
+  .threeplans__planone--business {
+    margin-right: 32px;
+  }
+  .threeplans__planone--enterprise {
+    margin-right: 32px;
+  }
+  .get__started--contents {
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 1280px) {
