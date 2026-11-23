@@ -79,6 +79,7 @@ h5 {
   text-transform: uppercase;
 }
 
+
 p {
   font-size: 16px;
   color: #243e63;
@@ -143,6 +144,7 @@ input::placeholder {
 .nav__links {
   list-style-type: none;
   display: flex;
+  align-items: center;
   font-size: 14px;
   padding: 0 0 4px;
   margin: 0 24px;
@@ -161,6 +163,8 @@ NAV
   margin: 0 24px;
   padding-bottom: 4px;
   font-weight: 600;
+  display: none;
+  color: #243e36;
 }
 
 .nav__link--signup {
@@ -194,6 +198,27 @@ NAV
 .fa-bars {
   height: 24px;
   width: 24px;
+}
+
+.hamburger__menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  margin: 24px 16px;
+  border-radius: 8px;
+  border-width: 1px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 32px;
+  color: rgb(26 32 44);
+  opacity: 0;
+}
+
+.hamburger__menu--links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* 
@@ -1686,6 +1711,9 @@ Footer
 
 
 @media (min-width: 1024px) {
+  .nav__link {
+    display: flex;
+  }
   .feature__description--ex {
     font-size: 18px;
   }
