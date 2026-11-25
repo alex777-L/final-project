@@ -199,6 +199,7 @@ NAV
   height: 24px;
   width: 24px;
   color: #6415ff;
+  
 }
 
 .fa-xmark {
@@ -225,26 +226,21 @@ NAV
   padding: 32px;
   color: rgb(26 32 44);
   opacity: 0;
-  transition: 1s;
-  animation: slide-in 2s;
+  animation: slide-in 300ms ease-in-out;
 }
 
 @keyframes slide-in {
   0% {
     transform:translateX(150%)
   }
+  50% {
+    transform:translateX(75%)
+  }
   100% {
     transform: translateX(0%);
   }
 }
-@keyframes slide-out {
-  0% {
-    transform:translateX(0%)
-  }
-  100% {
-    transform: translateX(150%);
-  }
-}
+
 
 .nav__hamburger--close {
   position: fixed;
@@ -253,6 +249,7 @@ NAV
   background-color: rgb(255 255 255);
   border: none;
   color: #6415ff;
+  transition: 300ms;
 }
 
 .menu--open .fa-bars {
