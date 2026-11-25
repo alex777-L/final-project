@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/8d3c672253.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <div class="root">
@@ -29,8 +30,12 @@
               <li>
                 <a class="nav__link nav__link--signup" href="#">Sign Up</a>
               </li>
-            </ul>
+            </ul> 
+           
             <div class="hamburger__menu">
+              <button class="nav__hamburger--close" onclick="closemenu()">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
               <div class="hamburger__menu--links">
                 <a href="#" class="hamburger__link">About</a>
                 <a href="#" class="hamburger__link">Blog</a>
@@ -39,8 +44,9 @@
                 <a href="#" class="hamburger__link">Login</a>
                 <a href="#" class="hamburger__link--signup">Sign Up</a>
               </div>
+              
             </div>
-            <button class="nav__hamburger">
+            <button class="nav__hamburger" onclick="openmenu()">
               <i class="fa-solid fa-bars"></i>
             </button>
           </nav>
