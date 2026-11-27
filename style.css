@@ -1735,10 +1735,42 @@ Footer
     padding: 16px 0;
     transform: translateX(-10px);
   }
+  .steps__startup {
+    margin-top: 64px;
+    text-align: center;
+    width: 80%;
+  }
+  .steps__twocol {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .steps__twocol--text {
+    align-items: center;
+  }
+  .steps__heading--two {
+    font-size: 30px;
+  }
+  .threeplans__description {
+    width: 80%;
+  }
+  .threeplans__planone--personal{
+    width: 70%;
+  }
+  .threeplans__planone--business {
+    width: 70%;
+  }
+  .threeplans__planone--enterprise {
+    width: 70%;
+  }
+  
 }
   @media (max-width: 768px) {
   .trusted__customers {
     align-items: center;
+    text-align: center;
+  }
+  .get__started--heading {
     text-align: center;
   }
   .design__illustration {
@@ -1806,7 +1838,13 @@ Footer
   }
   .get__started--btn {
     flex-direction: column;
-    width: 40%;
+  }
+  .get__started--button {
+    margin: 0;
+  }
+  .get__started--contact {
+    margin-top: 12px;
+    margin-right: 0;
   }
 }
 
