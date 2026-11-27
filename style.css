@@ -1590,6 +1590,7 @@ Footer
   font-size: 14px;
   font-weight: 500;
   list-style-type: none;
+  text-align: left;
 }
 
 .fivecolumn__link--item {
