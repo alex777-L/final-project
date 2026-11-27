@@ -2,6 +2,7 @@
 
 * {
   font-family: "Inter", sans-serif;
+  overflow-x: hidden;
 }
 .root {
   padding: 0 32px;
@@ -302,7 +303,7 @@ HIGHLIGHTS
   display: flex;
   flex-direction: column;
   text-align: left;
-  width: 40%;
+  width: 100%;
   height: 100%;
   align-items: center;
   justify-content: center;
@@ -1793,6 +1794,9 @@ Footer
   .highlights {
     display: flex;
     flex-direction: row;
+  }
+  .highlights__description {
+    width: 40%;
   }
   .service {
     width:33.3333%
