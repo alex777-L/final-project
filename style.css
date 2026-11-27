@@ -225,16 +225,13 @@ NAV
   justify-content: center;
   padding: 32px;
   color: rgb(26 32 44);
-  opacity: 0;
+  display: none;
   animation: slide-in 300ms ease-in-out;
 }
 
 @keyframes slide-in {
   0% {
     transform:translateX(150%)
-  }
-  50% {
-    transform:translateX(75%)
   }
   100% {
     transform: translateX(0%);
@@ -1400,6 +1397,7 @@ FAQS
   height: 24px;
   width: 24px;
 }
+
 
 .faqs__question--answer {
   opacity: 0;
