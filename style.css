@@ -12,7 +12,7 @@ body {
 }
 .row {
   position: relative;
-  width: 100%;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -22,6 +22,7 @@ nav {
   align-items: center;
   height: 44px;
   margin-top: 30px;
+  max-width: 1280px;
 }
 
 .logo__img {
@@ -296,9 +297,10 @@ HIGHLIGHTS
 */
 .highlights {
   display: flex;
-  
+  max-width: 1280px;
   flex-direction: column;
   align-items: center;
+  justify-items: center;
   padding: 96px 0;
 }
 
@@ -380,6 +382,7 @@ FEATURES
   display: flex;
   align-items: center;
   position: relative;
+  max-width: 1280px;
 }
 
 .feature__description {
@@ -498,6 +501,7 @@ EXAMPLES
 
 .example {
   display: flex;
+  max-width: 1280px;
   width: 100%;
   padding: 96px 0;
   align-items: center;
@@ -588,6 +592,7 @@ STEPS
 
 .steps {
   display: flex;
+  max-width: 1280px;
   width: 100%;
   padding: 96px 0;
   align-items: center;
@@ -686,6 +691,8 @@ VALUES
 */
 
 .values {
+  max-width: 1280px;
+  align-items: center;
   display: flex;
   padding: 96px 0;
 }
@@ -1172,6 +1179,7 @@ Testimonials
 */
 
 .testimonials__container {
+  max-width: 1280px;
   display: flex;
   flex-direction: column;
   padding-top: 96px;
@@ -1304,6 +1312,7 @@ FAQS
 */
 
 .faqs__container {
+  max-width: 1280px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1719,16 +1728,18 @@ Footer
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .trusted__customers {
-    align-items: center;
-    text-align: center;
-  }
   .highlights__btn {
     width: 550px;
     margin-top: 32px;
     align-items: center;
     padding: 16px 0;
     transform: translateX(-10px);
+  }
+}
+  @media (max-width: 768px) {
+  .trusted__customers {
+    align-items: center;
+    text-align: center;
   }
   .design__illustration {
     width: 80%;
@@ -1864,7 +1875,6 @@ Footer
     margin-right: 0px;
     max-width: none;
   }
- 
 }
 
 
